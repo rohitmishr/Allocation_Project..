@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <style>
+    
+    header
+    {
+      height: 10vh;
+      background-size: cover;
+      background-position: center;
+<!--      background-color: lightgoldenrodyellow;-->
+         background-color: rgba(3, 78, 136, 0.7);
+       background-image: linear-gradient(to right, white ,rgba(3, 78, 136, 0.7) );
+    }
+
+    ul {
+      float: right;
+      list-style-type: none;
+      /* margin-top: 25px; */
+      margin-top: 15px;
+    }
+    ul li
+    {
+      display:inline-block;
+    }
+
+    ul li a
+    {
+      text-decoration: none;
+      padding: 5px 20px;
+    }
+
+    ul li a:hover
+    {
+      background-color: lightgray;
+      color:black;
+    }
+    .features {
+      margin: 4em auto;
+      padding: 1em;
+      position: relative;
+    }
+
+    .feature-title {
+      color: #333;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    .features img {
+      -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+      box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+      margin-bottom: 16px;
+    }
+
+
+
+   
+    h2{
+      text-align: center;
+    }
+
+   
+    .background-home {
+
+     background-image: url({% static "Images/19366.jpg" %});
+
+
+
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+    }
+
+
+
+
+
+
+<!--.card:hover {-->
+<!--  background-color: whitesmoke;-->
+<!--  box-shadow:5px 5px black;-->
+<!--  padding: 3px;-->
+
+<!--}-->
+
+
+  
+    
+  </style>
+
+  </head>
+<body class=" background-home">
+  <div>  <header>
+      <div class="main">
+        <a href="http://127.0.0.1:8000/
+        Home"><!--<img src="{% static 'Images/logo.svg' %}" >--></a>
+        <ul>
+        <li><a href="http://127.0.0.1:8000/Home" style="color:white"><b>Home</b></a></li>
+        <li><a href="http://127.0.0.1:8000/ShowResource" style="color:white"><b>Resources</b></a></li>
+        <li><a href="http://127.0.0.1:8000/ShowProject" style="color:white"><b>Projects</b></a></li>
+        <li><a href="http://127.0.0.1:8000/ProjectAllocator" style="color:white"><b>Resource Allocation</b></a></li>
+        <li><a href="http://127.0.0.1:8000/Login" style="color:white"><b>Logout</b></a></li>
+        </ul>
+      </div>
+    </header>
+  </div>
+
+  <div class="background-home">
+    <div class="background">
+      <div class="container"> 
+        <!-- <div class="row">  -->
+          <h5 style="font-family: Georgia, 'Times New Roman', Times, serif;color:blue"><b></b></h5>
+           <!-- </div>
+          </div> -->
+     <!-- </div> -->
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;color:#0d6efd"><b>PROJECT ALLOCATION TRACKER</b></h2><br><br>
+  <div class="row">
+    <div class="col-sm-2"></div>
+
+    <div class="col-sm-3" style="margin-top:5px">
+      <div class="card" style="width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
+       <img src="{% static 'Images/office.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+
+          <p class="card-text">The Project Allocation Tracker (PAT) is a single unified platform for providing
+            visibility of resource availability
+            across tracks and utilizing the same information for actionizing the allocations. </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-2"></div>
+    <div class="col-sm-3">
+      <div class="card" style="width: 18rem;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+        <img src="{% static 'Images/project2.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+
+          <p class="card-text">The Project Allocation Tracker includes resource and project definition and
+            maintenance,
+            allocation, availability reporting and leadership
+            visibility dashboards.</p>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-2"></div>
+  </div>
+  <br>
+  <br>
+
+  <center>
+    <div class="col-sm-3">
+      <div class="card" style="width: 18rem; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+       <img src="{% static 'Images/project3.jpg' %}" class="card-img-top" alt="...">
+        <div class="card-body">
+
+          <p class="card-text">The Project Allocation Tracker includes resource and project definition and
+            maintenance,
+            allocation, availability reporting and leadership
+            visibility dashboards.</p>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </center>
+  <br>
+  <br>
+</body>
+
+</html>
